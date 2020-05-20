@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!--[if lt IE 9]>
+<script type="text/javascript">
+   document.createElement("nav");
+   document.createElement("header");
+   document.createElement("footer");
+   document.createElement("section");
+   document.createElement("article");
+   document.createElement("aside");
+   document.createElement("hgroup");
+</script>
+<![endif]-->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="../css/owl.carousel.css" rel="stylesheet" type="text/css" />
+<link href="css/owl.theme.css" rel="stylesheet" type="text/css" />
+<link href="css/slicknav.css" rel="stylesheet" type="text/css" />
+<link href="../cool-share/plugin.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/ease.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/owl.carousel.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.slicknav.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/waypoints.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/waypoints-sticky.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/accion.js" type="text/javascript" charset="utf-8"></script>
+
+<title>whirlpool</title>
+<!--poner script en function.php del ceo-->
+</head>
+<body>
+
+<!-- menu-->
+<ul id="menu" style="padding-top:3em;">
+<li><a href="index.html">INICIO</a></li>
+<li><a href="#" class="resalta">PRODUCTOS 	</a></li>
+<li><a href="soporte.html">SOPORTE</a></li>
+<li><a href="contacto.html" >CONTACTO</a></li>
+<li><a href="recetas.html" >RECETAS</a></li>
+<li><a href="donde.html" >DÓNDE COMPRAR</a></li>
+</ul>
+<a href="index.html"><img src="img/logo_menu.png" style="position:fixed; top:0.6em; left:1em; z-index:9998; height:50px; width:auto;"/></a>
+<a href="index.html"><img src="img/logo_menu_color.png" style="position:fixed; top:0.6em; left:1em; z-index:9999; height:50px; width:auto; opacity:1;" id="logo_menu_color"/></a>
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------menu-->
+<div style=" background:#d4d5d5; width:100%; color:#d4d5d5; margin:0; padding:0px; padding-top:45px;">.</div>
+<img src="img/productos_encabe.jpg" class="alcien" />
+
+<script type="text/javascript">
+
+	function navigateTo(sel) {
+    var apa = sel.options[sel.selectedIndex].value;
+	
+	
+	if(apa == 'todas') {  
+             //$('div#productos .producto').animate({opacity:1}, 200);  
+			 $('div#productos .producto').css("display","block") 
+         } else {  
+		 
+             $("div#productos .producto").each(function() {  
+                 if(!$(this).hasClass(apa)) {  
+				  //$(this).animate({opacity:0.5}, 200);
+                     $(this).css("display","none")
+                 } else {  
+                     //$(this).animate({opacity:1}, 200); 
+					  $(this).css("display","block") 
+                 }  
+				 
+				 
+             });  
+		 }
+	
+	
+}
+ 
+</script>
+<!---------------------------------------------------------------------------------------------------------------------------------------SELECTORES-->
+<div id="sele" style="width:100%; height:70px; background:#f1f1f1;">
+<div class="producto">
+<select onchange="navigateTo(this);" class="selectpicker form-control"  style="background:#FC0; color:#fff; font-size:1em; height:2.3em; padding-left:1em;" id="lista">
+<option class="heleveticaLight" style="padding-left:1em;" value="flamma"  >XPERT FLAMMA</option>
+<option class="heleveticaLight" style="padding-left:1em;" value="torch" >POWER TORCH</option>
+<option class="heleveticaLight" style="padding-left:1em;" value="glass" >GAS ON GLASS</option>
+<option class="heleveticaLight" style="padding-left:1em;" value="todas" >TODAS</option>
+</select>
+</div><!--fin selector 1-->
+<div class="producto">
+<select onchange="navigateTo(this, 'window', true);" class="selectpicker form-control"  style="background:#FC0; color:#fff; font-size:1em; height:2.3em; padding-left:1em;" id="lista2">
+<option class="heleveticaLight" style="padding-left:1em;" value="piso"  >AL PISO</option>
+<option class="heleveticaLight" style="padding-left:1em;" value="empotrables" >EMPOTRABLES</option>
+<option class="heleveticaLight" style="padding-left:1em;" value="parrillas" >PARRILLAS</option>
+<option class="heleveticaLight" style="padding-left:1em;" value="todas" >TODAS</option>
+</select>
+</div><!--fin selector 2-->
+</div>
+
+<!---------------------------------------------------------------------------------------------------------------------------------------PRODUCTOS-->
+<div id="productos" style="width:100%; background:#fff; border-bottom:solid 2px #ccc;">
+<!--********************************************************************* flamma-->
+<div class="producto flamma piso">
+<a href="productos/WF5659B.html"><img src="../imas/detalles/WF5659B_mini.jpg" /></a>
+<a href="productos/WF5659B.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto flamma piso">
+<a href="productos/WF6059D.html"><img src="../imas/detalles/WF6059D_mini.jpg" /></a>
+<a href="productos/WF6059D.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto flamma piso">
+<a href="productos/WF6559S.html"><img src="../imas/detalles/WF6559S_mini.jpg" /></a>
+<a href="productos/WF6559S.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto flamma piso">
+<a href="productos/WF7009S.html"><img src="../imas/detalles/WF7009S_mini.jpg" /></a>
+<a href="productos/WF7009S.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto flamma empotrables">
+<a href="productos/WE6259S.html"><img src="../imas/detalles/WE6259S_mini.jpg" /></a>
+<a href="productos/WE6259S.html" class="Vermas">Ver más</a>
+</div>
+
+<!--********************************************************************* torch-->
+
+<div class="producto torch piso">
+<a href="productos/WF9555S.html"><img src="../imas/detalles/WF9555S_mini.jpg" /></a>
+<a href="productos/WF9555S.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto torch piso">
+<a href="productos/WF9950S.html"><img src="../imas/detalles/WF9950S_mini.jpg" /></a>
+<a href="productos/WF9950S.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto torch empotrables">
+<a href="productos/WE9555S.html"><img src="../imas/detalles/WE9555S_mini.jpg" /></a>
+<a href="productos/WE9555S.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto torch empotrables">
+<a href="productos/WE9950S.html"><img src="../imas/detalles/WE9950S_mini.jpg" /></a>
+<a href="productos/WE9950S.html" class="Vermas">Ver más</a>
+</div>
+
+<!--********************************************************************* glass-->
+
+<div class="producto glass piso">
+<a href="productos/WF9995S.html"><img src="../imas/detalles/WF9995S_mini.jpg" /></a>
+<a href="productos/WF9995S.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto glass empotrables">
+<a href="productos/WE9995S.html"><img src="../imas/detalles/WE9995S_mini.jpg" /></a>
+<a href="productos/WE9995S.html" class="Vermas">Ver más</a>
+</div>
+<!--********************************************************************* otras-->
+
+<div class="producto piso">
+<a href="productos/WF5030B.html"><img src="../imas/detalles/WF5030B_mini.jpg" /></a>
+<a href="productos/WF5030B.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto piso">
+<a href="productos/WF5050Q.html"><img src="../imas/detalles/WF5050Q_mini.jpg" /></a>
+<a href="productos/WF5050Q.html" class="Vermas">Ver más</a>
+</div>
+<!--
+<div class="producto piso">
+<a href="productos/NWF5050B.html"><img src="../imas/detalles/NWF5050B_mini.jpg" /></a>
+<a href="productos/NWF5050B.html" class="Vermas">Ver más</a>
+</div>
+-->
+<div class="producto piso">
+<a href="productos/WF5150D.html"><img src="../imas/detalles/WF5150D_mini.jpg" /></a>
+<a href="productos/WF5150D.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto piso">
+<a href="productos/WF5350B.html"><img src="../imas/detalles/WF5350B_mini.jpg" /></a>
+<a href="productos/WF5350B.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto piso">
+<a href="productos/WF5650B.html"><img src="../imas/detalles/WF5650B_mini.jpg" /></a>
+<a href="productos/WF5650B.html" class="Vermas">Ver más</a>
+</div>
+<!--
+<div class="producto piso">
+<a href="productos/NWF5170D.html"><img src="../imas/detalles/NWF5170D_mini.jpg" /></a>
+<a href="productos/NWF5170D.html" class="Vermas">Ver más</a>
+</div>
+-->
+<div class="producto piso">
+<a href="productos/WF5350D.html"><img src="../imas/detalles/WF5350D_mini.jpg" /></a>
+<a href="productos/WF5350D.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto piso">
+<a href="productos/WF5850D.html"><img src="../imas/detalles/WF5850D_mini.jpg" /></a>
+<a href="productos/WF5850D.html" class="Vermas">Ver más</a>
+</div>
+<!--
+<div class="producto piso">
+<img src="../imas/detalles/NWF5950S_mini.jpg" />
+<a href="productos/NWF5950S.html" class="Vermas">Ver más</a>
+</div>
+-->
+<div class="producto piso">
+<a href="productos/WF6050D.html"><img src="../imas/detalles/WF6050D_mini.jpg" /></a>
+<a href="productos/WF6050D.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto piso">
+<a href="productos/WF6550S.html"><img src="../imas/detalles/WF6550S_mini.jpg" /></a>
+<a href="productos/WF6550S.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto piso">
+<a href="productos/WF7650S.html"><img src="../imas/detalles/WF7650S_mini.jpg" /></a>
+<a href="productos/WF7650S.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto piso">
+<a href="productos/WF8650S.html"><img src="../imas/detalles/WF8650S_mini.jpg" /></a>
+<a href="productos/WF8650S.html" class="Vermas">Ver más</a>
+</div>
+
+<!--******************************-->
+
+<div class="producto empotrables">
+<a href="productos/WE5650B.html"><img src="../imas/detalles/WE5650B_mini.jpg" /></a>
+<a href="productos/WE5650B.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto empotrables">
+<a href="productos/WE5850D.html"><img src="../imas/detalles/WE5850D_mini.jpg" /></a>
+<a href="productos/WE5850D.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto empotrables">
+<a href="productos/WE6250S.html"><img src="../imas/detalles/WE6250S_mini.jpg" /></a>
+<a href="productos/WE6250S.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto empotrables">
+<a href="productos/WE7650S.html"><img src="../imas/detalles/WE7650S_mini.jpg" /></a>
+<a href="productos/WE7650S.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto empotrables">
+<a href="productos/WE8650S.html"><img src="../imas/detalles/WE8650S_mini.jpg" /></a>
+<a href="productos/WE8650S.html" class="Vermas">Ver más</a>
+</div>
+
+<!--******************************-->
+
+<div class="producto parrillas">
+<a href="productos/WP3690B.html"><img src="../imas/detalles/WP3690B_parrilla_mini.jpg" /></a>
+<a href="productos/WP3690B.html" class="Vermas">Ver más</a>
+</div>
+
+<div class="producto parrillas">
+<a href="productos/WP3690E.html"><img src="../imas/detalles/WP3690E_parrilla_mini.jpg" /></a>
+<a href="productos/WP3690E.html" class="Vermas">Ver más</a>
+</div>
+
+
+
+<div style="clear:both"></div>
+</div><!------------------------------------------------------------------------------------------------------------------------ fin contenedor estufas-->
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------footer-->
+
+
+<script>
+
+ $('#sele').waypoint('sticky', {
+  offset: 70
+});
+
+$(function (){
+	var url = window.location.href;
+	var options = {
+		twitter: {
+			text: 'Estufas Whirlpool! ',
+			via: 'Whirlpool'
+		},facebook : true
+	};
+
+	$('.socialShare').shareButtons(url, options);
+	$('.socialShare').click(function(e){e.preventDefault()})
+	});
+</script>
+<div id="footer">
+<ul>
+<li style=" position:relative; top:1.5em; left:-2.5em;"><a href="contacto.html" style="color:#000;"><strong>CONTACTO</strong></a></li>
+<li style="position:relative; top:1.5em; left:-3em;"><a href="donde.html" class="dondecompro">DÓNDE COMPRAR</a></li>
+<li style="position:relative; top:-1.9em; right:0em;"><span class="socialShare" style="position:relative; right:-8em;"></span></li>
+</ul>
+</div>
+<script src="../cool-share/plugin.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18689421-10', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

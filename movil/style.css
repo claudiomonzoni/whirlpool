@@ -1,0 +1,451 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'HelveticaLight';
+      src: url('helveticaneueltstd-th_0.eot');
+    src: url('../fonts/helveticaneueltstd-th_0.eot') format('embedded-opentype'),
+         url('../fonts/helveticaneueltstd-th_0.woff2') format('woff2'),
+         url('../fonts/helveticaneueltstd-th_0.woff') format('woff'),
+         url('../fonts/helveticaneueltstd-th_0.ttf') format('truetype'),
+         url('../fonts/helveticaneueltstd-th_0.svg#HelveticaNeueLTStd35Thin') format('svg');
+        
+}
+@font-face {
+    font-family: 'HelveticaBold';
+     src: url('helveticaneueltstd-bd_0.eot');
+    src: url('../fonts/helveticaneueltstd-bd_0.eot') format('embedded-opentype'),
+         url('../fonts/helveticaneueltstd-bd_0.woff2') format('woff2'),
+         url('../fonts/helveticaneueltstd-bd_0.woff') format('woff'),
+         url('../fonts/helveticaneueltstd-bd_0.ttf') format('truetype'),
+         url('../fonts/helveticaneueltstd-bd_0.svg#HelveticaNeueLTStd75Bold') format('svg');
+       
+}
+/* CSS Document */
+
+/*   
+
+Theme Name: Nombre del tema
+
+Theme URI: no hay
+
+Description: la descripcion
+
+Author: LDG. Claudio Monzoni
+
+Author URI: www.cmn.mx
+
+
+
+.
+
+*/
+
+/* ajustes globales------------------------------------------------------------------------------*/
+
+
+
+
+/* ajustes de la pagina--------------------------------------------------------------------------*/
+
+
+html, body{ 
+font-size:16px;
+font-family: 'Open Sans', sans-serif;
+    line-height: 1.4em;
+	color:#585b57;
+	position:relative;
+	height:100%;
+	background-color:#efefef;
+}
+
+
+
+a{
+
+	color:#6f6f6f;
+	text-decoration:none;
+
+}
+
+a:hover{
+	text-decoration:none;
+	color:#000;
+
+}
+
+a:active{
+	text-decoration:none;
+
+
+}
+
+a:visited{
+	text-decoration:none;
+
+
+}
+
+
+h1{
+	font-size:3.6em;
+}
+
+h2{
+	font-size:1.2em;
+	letter-spacing:.01em;
+
+}
+
+
+
+
+
+p{
+letter-spacing:.02em;
+
+}
+
+ul li{
+	list-style-type:none;
+}
+
+
+
+img{
+border:none;
+}
+
+
+
+section{
+	width:100%;
+	position:relative;
+}
+article{
+	padding:0; margin:0;
+	
+}
+
+#menu{
+	display:none;	
+}
+/* clases*/
+
+.enlinea li{
+	display:inline-block;
+    padding:1.5em 0.5em 0 0.5em;
+
+}
+
+.dondecompro{
+	color:#FFF;
+	background:#f0b310;
+	padding:0.5em 0.8em 0.5em 0.8em;
+	-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+border-radius: 30px;
+margin-left:2em;
+font-size:0.9em;
+   -webkit-transition-property: background, color;
+       -moz-transition-property: background, color;
+         -o-transition-property: background, color;
+            transition-property: background, color;
+    -webkit-transition-duration: 0.3s;
+       -moz-transition-duration: 0.3s;
+         -o-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+    -webkit-transition-timing-function: linear;
+       -moz-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+				
+}
+.dondecompro:hover{
+	color:#f0b310;
+	background:#6f6f6f;
+}
+
+#video_p{
+	
+	padding-left:0;
+	padding-right:0;
+
+}
+
+#footer{
+	height:70px;
+	background:#fff;
+	font-size:0.8em;
+	padding-bottom:0;
+	margin-bottom:0;
+	position:relative;
+}
+
+#footer ul{ margin:0; padding:0; text-align:center;}
+
+#footer li{ list-style:none; display:inline;}
+
+.sinMargen{
+	padding-left:0;
+	padding-right:0;
+	padding-top:0;
+	padding-bottom:0;
+}
+.conlinea{
+	border:solid 1px #ccc;	
+}
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+/*-----------------------------------------acordeon*/
+
+#toggle-view {
+	list-style:none;	
+	margin:0;
+	padding:0;
+	width:100%;
+		background:#d4d5d5;
+}
+
+	#toggle-view li {
+		border-bottom:1px solid #ccc;
+		position:relative;
+		cursor:pointer;
+	}
+	
+	#toggle-view h3 {
+		margin:0;
+		background:#7c7c7c;
+	}
+
+	#toggle-view span {
+		position:absolute;
+		right:5px; top:0;
+		color:#ccc;
+	}
+	
+	#toggle-view .panel {
+		display:none;
+		background:#d4d5d5;
+		border:none;
+		padding-bottom:2em;
+	}	
+	
+	/* ---------------------------------------------------------------------------------------------ojos*/
+	.ojo{
+	position:absolute;
+}
+.tip{
+	background:#FFF;
+	font-size:0.7em;
+	width:150px;
+	position:relative;
+	top:-22em;
+	display:none;
+
+}
+
+.tip img{
+	width:100%;
+	height:auto;	
+}
+.tip p{ padding:0.5em 0.5em 0.5em 1em; line-height:1.5em;
+}
+
+/*----------------------------------------------------------acordeon soporte*/
+.acoBtn {	
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid #FFFFFF;
+	cursor: pointer;
+	font-size:1em;
+	border-bottom:solid 1px #a4a4a4;
+	padding:1em;
+	text-align:center;
+	}
+ 
+.acoConte {	
+	width: 100%;
+	float: left;
+	display: none;
+	padding:0.9em;
+	background:#fff;
+	}
+
+/*                                    --------------------------------------------------------forma*/
+
+
+#forma label{
+	padding:0 0 0.5em 0;
+	font-weight:400;
+	float:left;
+	width:auto;
+	padding-top:1.4em;
+	padding-right:0.7em;
+}
+
+#forma label img{
+	margin:0 0.8em 0.1em 0.8em;
+}
+.linea_forma{
+	width:100%;
+	height:4px;
+	border-bottom:double 2px #b5b5b5;
+	float:left;	
+}
+#forma input{
+	width:100%;
+	padding:0.5em 0.5em 0.5em 2em;
+	font-size:1.1em;
+	margin-bottom:1em;
+	border:none;
+	float:left;
+	color:#000;
+	
+}
+#forma input:focus{
+	border:none;
+}
+#forma textarea{
+	background:none;
+	border:none;
+	width:100%;
+	padding:0.5em 0.5em 0.5em 2em;
+	font-size:1.1em;
+	color:#000;
+
+}
+
+#forma #submit{
+	float:right;
+	width:130px;
+	height:40px;
+	color:#000;
+	background-color:#f0b310;
+	font-weight:bold;
+	padding-left:0.7em;
+	padding-top:0.2em;
+	margin:1em 0em 0 0;
+	font-size:1em;
+}
+
+#forma #submit:hover{
+	background-color:#000;
+	color:#f0b310;
+	width:40%;
+	float:right;
+	width:130px;
+	height:40px;
+}
+
+/**************************---------------------------------------------------------------productos*/
+
+.producto{
+width:50%; padding:1em; float:left;
+text-align:center;	
+}
+
+.producto img{
+	padding-bottom:2em;
+}
+.cual_pro{
+	opacity:0.7;	
+}
+#sele.stuck {
+			position:fixed;
+			top:70px;
+			z-index:300;
+			width:100%;
+		}
+	
+	
+	/*----------------------------------------------------------------------------------------DETALLES DE PRODUCTOS-/*/
+.conlineayfondo{
+	border-bottom:solid 1px #a4a4a4;
+	background:#fdfdfd;
+	padding:1em 0 1em 0;
+}
+
+.conlineanomas{
+	border-bottom:solid 1px #a4a4a4;
+	padding:1em 0 1em 0;
+
+}
+.margenIzq{
+	padding-left:10%;	
+}
+.margenDer{
+	padding-right:10%;
+	padding-left:2em;
+		
+}
+
+
+
+.socialShare{
+	z-index:0;
+}
+.alcien{
+	width:100%;
+	height:auto;	
+}
+.VerProductos{
+	color:#000;
+	font-weight:bold;
+	background:#ffcc00;
+	text-align:center;
+	padding:1em;
+	font-size:0.7em;
+	position:relative;
+	left:50%;
+	margin-left:-5em;;	
+}
+
+.Vermas{
+	color:#000;
+	font-weight:bold;
+	background:#ffcc00;
+	text-align:center;
+	padding:1em;
+	font-size:0.7em;	
+}
+.heleveticaLight{
+font-family: 'HelveticaLight';	
+}
+.helveticaBold{
+	font-family: 'HelveticaBold';
+}
+/* colores*/
+.blanco{
+	color:#FFF;
+}
+.gris{
+	color:#888888	
+}
+.negro{ color:#000;	
+}
+.amarillo{
+	color:#f0b310;
+}
+.azul{
+	color:#44bce1;	
+	}
+/* light box*/
+#html5-next{
+	 right:3em !important;
+
+}
+#html5-prev{
+	 left:3em !important;
+}
+
+#html5-close{
+	 right:0em !important;
+}
+
+#html5-elem-box{
+	background-color:none !important;
+}
+
+

@@ -1,0 +1,30 @@
+slide horizontal:
+http://darsa.in/sly/#!documentation
+https://github.com/darsain/sly/blob/master/docs/Markup.md
+
+lamar el carrusel desde html y con fade
+
+1) Add this file in the HTML: (after the owl.theme.css)
+
+<link rel="stylesheet" href="vendor/owl-carousel/owl.transitions.css" media="screen">
+2) The HTML must be like this:
+
+<div class="owl-carousel" data-plugin-options='{"items": 1, "autoHeight": true, "transitionStyle": "fade"}'>
+	<div>
+		<img alt="" class="img-responsive img-rounded" src="img/projects/project-1.jpg">
+	</div>
+	<div>
+		<img alt="" class="img-responsive img-rounded" src="img/projects/project-2.jpg">
+	</div>
+</div>
+Please let me know if you have any questions.
+
+Thanks
+
+
+
+acordeon que si jala bien:}
+http://www.queness.com/post/1743/create-a-fast-and-simple-toggle-view-content-with-jquery
+
+share boton
+http://tutorialzine.com/2014/08/cool-share-jquery-plugin/
